@@ -3660,3 +3660,15 @@ input, select, textarea {
     font-size: 0.9em;
     color: #888;
 }
+
+.image-row {
+    display: flex;
+    gap: 20px; /* Adds spacing between images */
+    justify-content: center; /* Centers the images */
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+.image-row .image {
+    display: inline-block;
+}
+
