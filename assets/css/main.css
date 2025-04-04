@@ -3317,7 +3317,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: column;
 		-moz-flex-direction: row-reverse;
 		-webkit-flex-direction: row-reverse;
 		-ms-flex-direction: row-reverse;
