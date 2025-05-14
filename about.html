@@ -30,17 +30,20 @@
             overflow: hidden;
         }
 
-        /* Top cloud parts */
+        /* Cloud bumps on the outside */
         .cloud-shape:before,
         .cloud-shape:after,
-        .cloud-shape .top-middle {
+        .cloud-shape .top-left,
+        .cloud-shape .top-right,
+        .cloud-shape .bottom-left,
+        .cloud-shape .bottom-right {
             content: '';
             position: absolute;
             background: #fff;
             border-radius: 50%;
         }
 
-        /* Left top puff */
+        /* Top left puff */
         .cloud-shape:before {
             width: 80px;
             height: 80px;
@@ -48,49 +51,39 @@
             left: -35px;
         }
 
-        /* Middle top puff */
-        .cloud-shape .top-middle {
-            width: 80px;
-            height: 80px;
-            top: -40px;
-        }
-
-        /* Right top puff */
-        .cloud-shape:after {
+        /* Top right puff */
+        .cloud-shape .top-left {
             width: 80px;
             height: 80px;
             top: -40px;
             right: -35px;
         }
 
-        /* Bottom cloud parts */
-        .cloud-shape .bottom-left,
-        .cloud-shape .bottom-right,
-        .cloud-shape .bottom-middle {
+        /* Bottom left puff */
+        .cloud-shape .bottom-left {
             width: 100px;
             height: 100px;
-            position: absolute;
-            background: #fff;
-            border-radius: 50%;
-        }
-
-        /* Left bottom puff */
-        .cloud-shape .bottom-left {
-            bottom: -20px;
+            bottom: -50px;
             left: 10px;
         }
 
-        /* Middle bottom puff */
-        .cloud-shape .bottom-middle {
-            bottom: -20px;
-        }
-
-        /* Right bottom puff */
+        /* Bottom right puff */
         .cloud-shape .bottom-right {
-            bottom: -20px;
+            width: 100px;
+            height: 100px;
+            bottom: -50px;
             right: 10px;
         }
 
+        /* Center puff */
+        .cloud-shape .top-right {
+            width: 120px;
+            height: 120px;
+            top: -60px;
+            left: 35px;
+        }
+
+        /* Add image inside the cloud */
         .cloud-shape img {
             max-width: 100%;
             height: auto;
@@ -120,15 +113,13 @@
             <section class="about-section">
                 <div class="about-image">
                     <div class="cloud-shape">
-                        <!-- Bottom parts added for cloud-like effect -->
+                        <!-- Cloud bumps (top-left, top-right, bottom-left, bottom-right) -->
+                        <div class="top-left"></div>
+                        <div class="top-right"></div>
                         <div class="bottom-left"></div>
-                        <div class="bottom-middle"></div>
                         <div class="bottom-right"></div>
 
-                        <!-- Top parts added for cloud-like effect -->
-                        <div class="top-middle"></div>
-
-                        <!-- The original image of you -->
+                        <!-- The image of you inside the cloud -->
                         <img src="images/professional.JPG" style="width: 150px;" alt="Maya Jairam">
                     </div>
                 </div>
@@ -176,4 +167,3 @@
 </body>
 
 </html>
-
