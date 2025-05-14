@@ -6,6 +6,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Embedded CSS -->
+    <style>
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .cloud-shape {
+            width: 200px; /* Adjust the size of the cloud container */
+            height: 150px;
+            background: #fff;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cloud-shape:before,
+        .cloud-shape:after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .cloud-shape:before {
+            width: 70px;
+            height: 70px;
+            top: -20px;
+            left: 10px;
+        }
+
+        .cloud-shape:after {
+            width: 70px;
+            height: 70px;
+            top: -20px;
+            right: 10px;
+        }
+
+        .cloud-shape img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -17,9 +68,10 @@
             <nav class="links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,7 +80,9 @@
         <div id="main">
             <section class="about-section">
                 <div class="about-image">
-                    <img src="images/professional.JPG" style="width: 150px;" alt="Maya Jairam">
+                    <div class="cloud-shape">
+                        <img src="images/professional.JPG" style="width: 150px;" alt="Maya Jairam">
+                    </div>
                 </div>
                 <div class="about-text">
                     <h2>Hi, I'm Maya Jairam</h2>
