@@ -28,9 +28,19 @@
 
         <!-- Main -->
         <div id="main">
-            <article class="post" style="position: relative; background: url('images/connect.jpg') no-repeat center center / cover; border-radius: 12px; height: 200px; overflow: hidden;">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-                background-color: rgba(255, 255, 255, 0.5); z-index: 0;"></div>
+            <article class="post" style="border-radius: 12px; overflow: hidden; padding: 0;">
+                <!-- Top half: background image only -->
+    <div style="
+    height: 200px;
+    background: url('images/connect.jpg') no-repeat center center / cover;
+    position: relative;">
+    <!-- Optional white overlay -->
+    <div style="
+        background-color: rgba(255, 255, 255, 0.4);
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;">
+    </div>
+</div>
                 <header>
                     <div class="title">
                         <h2>Contact Me</h2>
